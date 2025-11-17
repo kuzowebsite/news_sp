@@ -5,8 +5,8 @@ import time
 from datetime import datetime
 import os
 
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+TELEGRAM_BOT_TOKEN = "8268335548:AAG-N0m33Rat7EhQsPQVp5WU8M94OQM-ZbA"
+TELEGRAM_CHAT_ID = "8507918925"
 
 BOT_TOKEN = TELEGRAM_BOT_TOKEN
 CHAT_ID = TELEGRAM_CHAT_ID
@@ -595,4 +595,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
