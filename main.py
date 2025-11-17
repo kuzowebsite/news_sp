@@ -5,8 +5,8 @@ import time
 from datetime import datetime
 import os
 
-TELEGRAM_BOT_TOKEN = "8228944978:AAGTcjv-XPRhocQJmL9ZtxwPFwHCTbAgs18"
-TELEGRAM_CHAT_ID = "-1002970054473"
+TELEGRAM_BOT_TOKEN = "8268335548:AAG-N0m33Rat7EhQsPQVp5WU8M94OQM-ZbA"
+TELEGRAM_CHAT_ID = "8507918925"
 
 BOT_TOKEN = TELEGRAM_BOT_TOKEN
 CHAT_ID = TELEGRAM_CHAT_ID
@@ -119,6 +119,47 @@ SCRAPE_SITES = {
     "📢 News.mn 📰": "https://news.mn",
     "📢 Ema.gov.mn 📰": "https://ema.gov.mn/",
     
+    # Newswire.mn
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/42",
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/91",
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/64",
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/83",
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/21",
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/30",
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/47",
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/49",
+    "📢 Newswire.mn 📰": "https://newswire.mn/c/16",
+    
+    # Nuuts.mn
+    "📢 Nuuts.mn 📰": "https://nuuts.mn/?cat=5",
+    "📢 Nuuts.mn 📰": "https://nuuts.mn/?cat=7",
+    "📢 Nuuts.mn 📰": "https://nuuts.mn/?cat=6",
+    "📢 Nuuts.mn 📰": "https://nuuts.mn/?cat=9",
+    "📢 Nuuts.mn 📰": "https://nuuts.mn/?cat=19",
+    
+    # Mongolcomment.mn
+    "📢 Mongolcomment.mn 📰": "https://mongolcomment.mn/c/politics",
+    "📢 Mongolcomment.mn 📰": "https://mongolcomment.mn/c/economy",
+    "📢 Mongolcomment.mn 📰": "https://mongolcomment.mn/c/art",
+    "📢 Mongolcomment.mn 📰": "https://mongolcomment.mn/c/sport",
+    "📢 Mongolcomment.mn 📰": "https://mongolcomment.mn/c/advice",
+    "📢 Mongolcomment.mn 📰": "https://mongolcomment.mn/c/technology",
+    "📢 Mongolcomment.mn 📰": "https://mongolcomment.mn/c/yellow",
+    "📢 Mongolcomment.mn 📰": "https://mongolcomment.mn/c/humuus",
+    
+    # Parliament.mn
+    "📢 Parliament.mn 📰": "https://www.parliament.mn/nc/medeelel/",
+    "📢 Parliament.mn 📰": "https://www.parliament.mn/nc/480/",
+    "📢 Parliament.mn 📰": "https://www.parliament.mn/nc/237/",
+    "📢 Parliament.mn 📰": "https://www.parliament.mn/nc/615/",
+    
+    # Itoim.mn
+    "📢 Itoim.mn 📰": "https://itoim.mn/s/politic",
+    "📢 Itoim.mn 📰": "https://itoim.mn/s/politic/court",
+    "📢 Itoim.mn 📰": "https://itoim.mn/s/politic/government",
+    "📢 Itoim.mn 📰": "https://itoim.mn/s/politic/political-parties",
+    "📢 Itoim.mn 📰": "https://itoim.mn/s/politic/president",
+    
     # Chuhal.mn
     "📢 Chuhal.mn 📰": "http://chuhal.mn/c/1",
     "📢 Chuhal.mn 📰": "http://chuhal.mn/c/4/",
@@ -162,7 +203,7 @@ SCRAPE_SITES = {
 
     # Sonin.mn
     "📢 Sonin.mn - 1": "https://sonin.mn/categorized/1/",
-    "📢 Sonin.mn - 2": "https://sonin.mn/categorized/2/",
+    "📢 Sonin.mn - 2": "https://sonin.mn/categorized/2/",   
     "📢 Sonin.mn - 7": "https://sonin.mn/categorized/7/",
     "📢 Sonin.mn - 8": "https://sonin.mn/categorized/8/",
     "📢 Sonin.mn - 9": "https://sonin.mn/categorized/9/",
@@ -386,6 +427,96 @@ SCRAPE_SITES = {
     "📺 Sorgog.mn - category41": "http://sorgog.mn/news.php?category=41/",
     "📺 Sorgog.mn - category57": "http://sorgog.mn/news.php?category=57/",
     "📺 Sorgog.mn - category46": "http://sorgog.mn/news.php?category=46/",
+    
+    
+    #Paparazzi.mn
+    "📺 Paparazzi.mn - medeelel": "https://paparazzi.mn/news",
+    "📺 Paparazzi.mn - video-medee": "https://paparazzi.mn/video",
+    "📺 Paparazzi.mn - dotood": "https://paparazzi.mn/papin",
+    "📺 Paparazzi.mn - gadaad": "https://paparazzi.mn/papout",
+    "📺 Paparazzi.mn - content": "https://paparazzi.mn/photo",
+    
+    #Gereg.mn
+    "📺 Gereg.mn - uls-tur": "https://gereg.mn/category/%d1%83%d0%bb%d1%81%d1%82%d3%a9%d1%80",
+    "📺 Gereg.mn - soyl": "https://gereg.mn/category/%d1%81%d0%be%d1%91%d0%bb",
+    "📺 Gereg.mn - ediin-zasag": "https://gereg.mn/category/%d1%8d%d0%b4%d0%b8%d0%b9%d0%bd-%d0%b7%d0%b0%d1%81%d0%b0%d0%b3",
+    "📺 Gereg.mn - niigem": "https://gereg.mn/category/%d0%bd%d0%b8%d0%b9%d0%b3%d1%8d%d0%bc",
+    "📺 Gereg.mn - baigali-orchin": "https://gereg.mn/category/%d0%b1%d0%b0%d0%b9%d0%b3%d0%b0%d0%bb%d1%8c-%d0%be%d1%80%d1%87%d0%b8%d0%bd",
+    
+    #Eagle.mn
+    "📺 Eagle.mn - uls-tur": "https://eagle.mn/c/2",
+    "📺 Eagle.mn - ediin-zasag": "https://eagle.mn/c/3",
+    "📺 Eagle.mn - Niigem": "https://eagle.mn/c/4",
+    "📺 Eagle.mn - Delhii-dahin": "https://eagle.mn/c/6",
+    "📺 Eagle.mn - Urlag": "https://eagle.mn/c/7",
+    "📺 Eagle.mn - Sport": "https://eagle.mn/c/8",
+    
+    #Dorgio.mn
+    "📺 Dorgio.mn - uls-tur": "https://dorgio.mn/c/1",
+    "📺 Dorgio.mn - ediin-zasag": "https://dorgio.mn/c/3",
+    "📺 Dorgio.mn - Niigem": "https://dorgio.mn/c/2",
+    "📺 Dorgio.mn - Technology": "https://dorgio.mn/c/5",
+    "📺 Dorgio.mn - Business": "https://dorgio.mn/c/6",
+    "📺 Dorgio.mn - Sport": "https://dorgio.mn/c/8",
+    "📺 Dorgio.mn - soyl-urlag": "https://dorgio.mn/c/9",
+    "📺 Dorgio.mn - zuvluguu": "https://dorgio.mn/c/10",
+    "📺 Dorgio.mn - Chuluut": "https://dorgio.mn/c/11",
+    "📺 Dorgio.mn - Char-medee": "https://dorgio.mn/c/12",
+    "📺 Dorgio.mn - Yriltslaga": "https://dorgio.mn/c/20",
+    
+    #Erennews.mn
+    "📺 Erennews.mn - Eren-survaljlah": "https://erennews.mn/c/7",
+    "📺 Erennews.mn - uls-tur": "https://erennews.mn/c/1",
+    "📺 Erennews.mn - Erengiin-tusgal": "https://erennews.mn/c/4",
+    "📺 Erennews.mn - Niigem": "https://erennews.mn/c/3",
+    "📺 Erennews.mn - Entertainment": "https://erennews.mn/c/22",
+    "📺 Erennews.mn - Delhii": "https://erennews.mn/c/9",
+    
+    #Uchral.mn
+    "📺 Uchral.mn - UIH-dahi-ajil": "https://uchral.mn/?menu=2",
+    
+    #Polit.mn
+    "📺 Polit.mn - Zaluus-Uls-tur": "https://www.polit.mn/as/politics",
+    "📺 Polit.mn - Social": "https://www.polit.mn/as/social",
+    "📺 Polit.mn - Delhiin-uls-tur": "https://www.polit.mn/as/world",
+    "📺 Polit.mn - Emegteichuudiin-manlailal": "https://www.polit.mn/as/emegteichuud",
+    "📺 Polit.mn - Niigem": "https://www.polit.mn/as/niigem",
+    
+    #Peak.mn
+    "📺 Peak.mn - Uurlakh-uu-Uchirlakh-uu": "https://peak.mn/category/uurlakh-uu-uchirlakh-uu?menu=19",
+    "📺 Peak.mn - Bidnii-17-zorilt": "https://peak.mn/my17",
+    "📺 Peak.mn - Sanhvvgiin-bolovsrol": "https://peak.mn/category/economics?menu=2",
+    "📺 Peak.mn - Bi-neg-udaa": "https://peak.mn/category/bi-neg-udaa?menu=25",
+    "📺 Peak.mn - Khunii-bagsh": "https://peak.mn/category/khunii-bagsh?menu=26",
+    "📺 Peak.mn - Technology": "https://peak.mn/category/technology?menu=11",
+    
+    #Niitlelch.mn
+    "📺 Niitlelch.mn - Uls-tur": "https://niitlelch.mn/%D0%B0%D0%BD%D0%B3%D0%B8%D0%BB%D0%B0%D0%BB/%d1%83%d0%bb%d1%81-%d1%82%d3%a9%d1%80/",
+    "📺 Niitlelch.mn - Niigem": "https://niitlelch.mn/%D0%B0%D0%BD%D0%B3%D0%B8%D0%BB%D0%B0%D0%BB/%d0%bd%d0%b8%d0%b9%d0%b3%d1%8d%d0%bc/",
+    "📺 Niitlelch.mn - Ediin-zasag": "https://niitlelch.mn/%D0%B0%D0%BD%D0%B3%D0%B8%D0%BB%D0%B0%D0%BB/%d1%8d%d0%b4%d0%b8%d0%b9%d0%bd-%d0%b7%d0%b0%d1%81%d0%b0%d0%b3/",
+    "📺 Niitlelch.mn - Soyl-urlag": "https://niitlelch.mn/%D0%B0%D0%BD%D0%B3%D0%B8%D0%BB%D0%B0%D0%BB/%d1%81%d0%be%d1%91%d0%bb-%d1%83%d1%80%d0%bb%d0%b0%d0%b3/",
+    "📺 Niitlelch.mn - Sport": "https://niitlelch.mn/%D0%B0%D0%BD%D0%B3%D0%B8%D0%BB%D0%B0%D0%BB/%d1%81%d0%bf%d0%be%d1%80%d1%82/",
+    "📺 Niitlelch.mn - Eruul-mend": "https://niitlelch.mn/%D0%B0%D0%BD%D0%B3%D0%B8%D0%BB%D0%B0%D0%BB/%d1%8d%d1%80%d2%af%d2%af%d0%bb-%d0%bc%d1%8d%d0%bd%d0%b4/",
+    "📺 Niitlelch.mn - Shinjleh-uhaan": "https://niitlelch.mn/%D0%B0%D0%BD%D0%B3%D0%B8%D0%BB%D0%B0%D0%BB/%d1%88%d0%b8%d0%bd%d0%b6%d0%bb%d1%8d%d1%85-%d1%83%d1%85%d0%b0%d0%b0%d0%bd/",
+    
+    #Fact.mn
+    "📺 Fact.mn - Uls-tur": "https://www.fact.mn/category/%d1%83%d0%bb%d1%81-%d1%82%d3%a9%d1%80-2",
+    "📺 Fact.mn - Ulaanbaatar-sonin": "https://www.fact.mn/category/%d0%bc%d1%8d%d0%b4%d1%8d%d1%8d%d0%bb%d1%8d%d0%bb-2/%d1%83%d0%bb%d0%b0%d0%b0%d0%bd%d0%b1%d0%b0%d0%b0%d1%82%d0%b0%d1%80",
+    "📺 Fact.mn - Uul-uurhai": "https://www.fact.mn/category/%d1%83%d1%83%d0%bb-%d1%83%d1%83%d1%80%d1%85%d0%b0%d0%b9",
+    "📺 Fact.mn - Delhii-dahind": "https://www.fact.mn/category/%d0%bc%d1%8d%d0%b4%d1%8d%d1%8d%d0%bb%d1%8d%d0%bb-2/%d0%b4%d1%8d%d0%bb%d1%85%d0%b8%d0%b9",
+    "📺 Fact.mn - Medeelel": "https://www.fact.mn/category/%d0%bc%d1%8d%d0%b4%d1%8d%d1%8d%d0%bb%d1%8d%d0%bb-2",
+    "📺 Fact.mn - Khumuus": "https://www.fact.mn/category/%d1%85%d2%af%d0%bc%d2%af%d2%af%d1%81-%d0%bd%d0%b8%d0%b9%d0%b3%d1%8d%d0%bc",
+    "📺 Fact.mn - Bank-sankhuu": "https://www.fact.mn/category/%d0%b1%d0%b0%d0%bd%d0%ba-3",
+    "📺 Fact.mn - Sonin-hachin": "https://www.fact.mn/category/%d1%81%d0%be%d0%bd%d0%b8%d0%bd-%d1%85%d0%b0%d1%87%d0%b8%d0%bd",
+    
+    #Ugluu.mn
+    "📺 Ugluu.mn - Medee-medeelel": "https://ugluu.mn/category/info",
+    "📺 Ugluu.mn - Bolovsrol": "https://ugluu.mn/category/edu",
+    "📺 Ugluu.mn - Entertainment": "https://ugluu.mn/category/entertainment",
+    "📺 Ugluu.mn - Zuvluguu": "https://ugluu.mn/category/%d0%b7%d3%a9%d0%b2%d0%bb%d3%a9%d0%b3%d3%a9%d3%a9-%d0%b7%d3%a9%d0%b2%d0%bb%d3%a9%d0%bc%d0%b6",
+    "📺 Ugluu.mn - Shar-Medee": "https://ugluu.mn/category/yellow-page",
+    "📺 Ugluu.mn - Oron-nutag": "https://ugluu.mn/category/country",
+    "📺 Ugluu.mn - Irgenii-medeelel": "https://ugluu.mn/category/user-info",
 }
 
 def check_feeds():
